@@ -3,16 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 <title>Homepage</title>
 <style>
-body, html {height: 100%;margin: 0;}
-.hero-image {background-image: url("devdesk.jpg");height: 50%;background-position: center;
+body, html {height: 100%;margin: 0;font-family: 'Supermercado One', cursive;}
+.hero-image {background-image: url("images/devdesk.jpg");height: 50%;background-position: center;
             background-repeat: no-repeat;background-size: cover;position: relative;}
 .hero-text {text-align: center;position: absolute;top: 50%;left: 50%;
             transform: translate(-50%, -50%);color: tan;}
 .hero-text button {border: none;outline: 0;display: inline-block;padding: 10px 25px;
-            color: black;background-color: #ddd;text-align: center;cursor: pointer;}
+            color: black;background-color: #ddd;text-align: center;cursor: pointer;
+            text-decoration: none;}
 .hero-text button:hover {background-color: #555;color: white;}
+.hero-text a {text-decoration: none;}
+.container {height: 700px;width: 100%;text-align: center;}
+.demo {width: 50%;height: ;float: left;position: absolute;}
+.clients {width: 50%;height: ;float: right;position: relative;}
+.blog-container {width: 100%;height: 700px;position: ;text-align: center}
+.contact-form {width: 100%;height: 300px;text-align: center;}
+.footer {position: relative;width: 100%;height: 200px;background-color: tan;}
+.footer1 {display: inline-block;;width: 33%;float: left;}
+.footer2 {display: inline-block;width: 33%;float: center;}
+.footer3 {display: inline-block;width: 33%;float: right;}
 </style>
 </head>
 <body>
@@ -20,22 +32,40 @@ body, html {height: 100%;margin: 0;}
   <div class="hero-text">
     <h1 style="font-size:56px;">Art M Designs</h1>
     <p>Beautiful and Simple Designs for Everyone</p>
-  <button>Email me</button>
+  <button><a href="mailto:artmdesigns@outlook.com?Subject=I%20need%20a%20website!" target="_top">
+      Email me</a></button>
  </div>
 </div>
 <div class="container">
   <div class="demo">
+    <h1>Examples of my Work</h1>
   </div>
   <div class="clients">
+    <h1>Satisfied Clients</h1>
   </div>
 </div>
-<div class="container2">
-  <div class="blog">
-  </div>
-  <div class="contact-form">
-  </div>
+<div class="blog-container">
+  <h1>Latest News</h1>
+</div>
+<div class="contact-form">
+  <h1>Contact me to help build your business!</h1>
 </div>
 <div class="footer">
+  <div class="footer1">
+    <h3>Site Map</h3>
+  </div>
+  <div class="footer2">
+    <h3>Join The List</h3>
+    Name:<br>
+    <input type="text" name="name"><br>
+    Email:<br>
+    <input type="text" name="email">
+  </div>
+  <div class="footer3">
+    <h3>Contact Me</h3>
+    <p>Art Mucitelli<br>PO Box 634 Clark Mills NY 13321<br>
+    315-725-5290<br>artmdesigns@outlook.com</p>
+  </div>
 </div>
 </body>
 </html>
