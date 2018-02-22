@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+body, html {margin: 0;padding: 0;}
+.header {width: 100%;height: 50px;background-color: black;color: white;}
+.header-contact {display: inline-block;float: left;color: white;}
+.header-cart {display: inline-block;float: right;margin-right: 20px;}
+.container {width: 100%;height: 75px;background-color: gainsboro;}
+.logo {height: 75px;width: 400px;float: left;margin-left: -100px;}
+.logo img {width: 180px;height: 75px;opacity: .5;margin-left: 20px;}
+.nav {overflow: hidden;background-color: gainsgoro;float: right;height: 75px;margin-top: 30px;}
+.nav a {color:#000;text-align: center;padding: 14px 16px;text-decoration: none;
+      font-size: 17px;}
+.nav a:hover {background-color: #ddd;color: black;cursor: pointer;}
+.slideshow {position: relative;width: 100%;}
+.slideshow img {width: 100%;height: 700px;position: absolute;top: 77px;left: 0;z-index: 3;-webkit-animation: slideshow 12s linear 0s infinite;
+      -moz-animation: slideshow 12s linear 0s infinite;-ms-animation: slideshow 12s linear 0s infinite;
+      -o-animation: slideshow 12s linear 0s infinite;animation: slideshow 12s linear 0s infinite;}
+.slideshow img:nth-child(2) {z-index: 2;-webkit-animation: slideshow 12s linear 4s infinite;-moz-animation: slideshow 12s linear 4s infinite;
+      -ms-animation: slideshow 12s linear 4s infinite;-o-animation: slideshow 12s linear 4s infinite;animation: slideshow 12s linear 4s infinite;}
+.slideshow img:nth-child(3) {z-index: 1;-webkit-animation: slideshow 12s linear 8s infinite;-moz-animation: slideshow 12s linear 8s infinite;
+      -ms-animation: slideshow 12s linear 8s infinite;-o-animation: slideshow 12s linear 8s infinite;animation: slideshow 12s linear 8s infinite;}
+@-webkit-keyframes slideshow {
+  25% { opacity: 1;}
+  33.33% { opacity: 0;}
+  91.66% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes slideshow {
+  25% { opacity: 1;}
+  33.33% { opacity: 0;}
+  91.66% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-ms-keyframes slideshow {
+  25% { opacity: 1;}
+  33.33% { opacity: 0;}
+  91.66% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-o-keyframes slideshow {
+  25% { opacity: 1;}
+  33.33% { opacity: 0;}
+  91.66% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@keyframes slideshow {
+  25% { opacity: 1;}
+  33.33% { opacity: 0;}
+  91.66% { opacity: 0;}
+  100% { opacity: 1;}
+}
+.reviews {height: 1000px;width: 100%;background-image: url("forest.jpg");background-size: 1450px 1000px;
+          background-repeat: no-repeat;margin-top: 700px;z-index: -5;}
+.column {float: left;width: 33.33%;padding: 15px;top: 2500px;color: white;}
+.row:after {content: "";display: table;clear: both;background-color: #000000}
+@media (max-width:600px) {
+  .column {
+      width: 100%;
+  }
+}
+.logo-rot {width: 100%;height: 100px;margin-top: 50px;}
+.storefront {height: 1200px;width: 100%;background-image: url("oil-3114256_1920.jpg");background-size: 1550px 1200px;
+          background-repeat: no-repeat;margin-top: -25px;z-index: -1;}
+.storefront-text {text-align: center;color: white;position: relative;top: 80px;margin-left: ;}
+.footer {background-color: black;width: 100%;height: 300px;position: relative;margin-top: -10px;}
+.footer1 {width: 32%;height: 100px;background-color: black;color: white;display: inline-block;float: left;}
+.footer2 {width: 32%;height: 100px;background-color: black;color: white;display: inline-block;}
+.footer3 {width: 32%;height: 100px;background-color: black;color: white;display: inline-block;float: right;}
+.fa {padding: 20px;font-size: 30px;width: 50px;text-align: center;text-decoration: none;margin: 5px 2px;}
+.fa:hover {opacity: 0.7;}
+.fa-facebook {background: #0000;color: white;}
+.fa-twitter {background: #0000;color: white;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-contact">
+    <h4>email us: contact@someone.com</h4>
+  </div>
+  <div class="header-cart">
+    <h4><span class="glyphicon glyphicon-shopping-cart"></span>  your cart.</h4>
+  </div>
+</div>
+<div class="container">
+  <div class="logo">
+    <img src="logo-placeholder.png">
+  </div>
+  <div class="nav">
+    <a class="active" href="#">Home</a>
+    <a href="#">Foods</a>
+    <a href="#">Our Team</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="slideshow">
+   <img src="cherryt.jpg"/>
+   <img src="pepper.jpg"/>
+   <img src="salmon.jpg"/>
+  </div>
+</div>
+<div class="reviews">
+  <div class="row">
+    <div class="column">
+      <h2>Review</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
+    </div>
+    <div class="column">
+      <h2>Review</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
+    </div>
+    <div class="column">
+      <h2>Review</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
+    </div>
+  </div>
+</div>
+<div class="logo-rot">
+</div>
+<div class="storefront">
+  <div class="storefront-text">
+    <h3>Come shop our amazing foods</h3>
+    <p>See why chefs around the world order from us. Reliable and fresh.</p>
+    <button>Shop Now</button>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer1">
+    <h3>site map</h3>
+  </div>
+  <div class="footer2">
+    <h3>contact info</h3>
+  </div>
+  <div class="footer3">
+    <h3>random and social media</h3>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+  </div>
+</div>
+</body>
+</html>
