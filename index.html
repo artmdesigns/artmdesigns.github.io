@@ -67,6 +67,32 @@ body, html {margin: 0;padding: 0;}
   }
 }
 .logo-rot {width: 100%;height: 100px;margin-top: 50px;}
+.scroll-left {height: 50px;overflow: hidden;position: relative;}
+.scroll-left p {position: absolute;width: 100%;height: 100%;margin: 0;line-height: 50px;
+     text-align: center;/* Starting position */-moz-transform:translateX(100%);-webkit-transform:translateX(100%);
+     transform:translateX(100%);/* Apply animation to this element */ -moz-animation: scroll-left 10s linear infinite;
+     -webkit-animation: scroll-left 10s linear infinite;animation: scroll-left 10s linear infinite;}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% {
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-moz-transform: translateX(-100%);
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+}
 .storefront {height: 1200px;width: 100%;background-image: url("oil-3114256_1920.jpg");background-size: 1550px 1200px;
           background-repeat: no-repeat;margin-top: -25px;z-index: -1;}
 .storefront-text {text-align: center;color: white;position: relative;top: 80px;margin-left: ;}
@@ -125,6 +151,9 @@ body, html {margin: 0;padding: 0;}
   </div>
 </div>
 <div class="logo-rot">
+  <div class="scroll-left">
+    <p style="font-size:30px">Logos of happy clients can go here. Reviews from media sources as well.</p>
+  </div>
 </div>
 <div class="storefront">
   <div class="storefront-text">
